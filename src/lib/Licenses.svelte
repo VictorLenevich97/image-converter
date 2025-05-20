@@ -3,7 +3,7 @@
     const availableLicenses = [
         {
             name: "JSZip",
-            extra: "2009-2016 Stuart Knightley, David Duponchel, Franz Buchinger, António Afonso",
+            extra: "",
         },
         { name: "Svelte", extra: "2016-24 these people", license: "mit" },
         { name: "heic2any", extra: "2020 Alex Corvi", license: "mit" },

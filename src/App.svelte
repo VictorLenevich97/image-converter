@@ -20,7 +20,6 @@
   import TitleIcon from "./lib/Styles/TitleIcon.svelte";
   import { updateAccentImage } from "./Scripts/ImageContentHandler";
   import Privacy from "./lib/Privacy.svelte";
-  import Licenses from "./lib/Licenses.svelte";
   import CheckNativeHeicSupport from "./Scripts/CheckNativeHeicSupport";
   import TikTokIntegration from "./lib/Extra/TikTokIntegration.svelte";
   /**
@@ -216,7 +215,7 @@
     {#if window.showDirectoryPicker !== undefined}
       <br /><br />
       <div class="second card">
-        <TitleIcon asset="folder" isH3={true}>File System API:</TitleIcon>
+        <!-- <TitleIcon asset="folder" isH3={true}>File System API:</TitleIcon>
         <div class="checkContainer">
           <input
             type="checkbox"
@@ -228,7 +227,7 @@
           <label for={fileSystemAPIId}
             >Avoid using the File System API (if available)</label
           >
-        </div>
+        </div> -->
       </div>
     {/if}
     <br /><br />
@@ -262,7 +261,7 @@
       {/await}
     </div>
     <br /><br />
-    <div class="second card">
+    <!-- <div class="second card">
       <TitleIcon asset="musicnote" isH3={true}>TikTok integration</TitleIcon>
       <p>
         Write the link for the server that'll be used for posting images on
@@ -280,8 +279,7 @@
         image-renderer</i
       >
     </div>
-    <br /><br />
-    <Licenses></Licenses>
+    <br /><br /> -->
   </Dialog>
 {:else if dialogShow === 2}
   <Dialog close={hideDialog}></Dialog>
