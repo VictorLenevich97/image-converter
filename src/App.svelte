@@ -152,10 +152,10 @@
 {#if $conversionStatus === 0}
   <div class="flex multiPage">
     <Picker></Picker>
-    {#if !window.matchMedia("(display-mode: standalone)").matches}
+    <!-- {#if !window.matchMedia("(display-mode: standalone)").matches}
       <PWAPrompt></PWAPrompt>
     {/if}
-    <Privacy></Privacy>
+    <Privacy></Privacy> -->
   </div>
 {:else if $conversionStatus === 1}
   <ImagePicker></ImagePicker><br />
